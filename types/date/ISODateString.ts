@@ -115,4 +115,4 @@ type MonthWithDay30 = `${Month30}-${Day30}`;
 type MonthWithDayOnNormalYear = MonthWithDay30 | MonthWithDay31 | `02-${Day28}`;
 type MonthWithDayOnLeapYear = MonthWithDay30 | MonthWithDay31 | `02-${Day29}`;
 
-export type DateString = `${NormalYear}-${MonthWithDayOnNormalYear}` | `${LeapYear}-${MonthWithDayOnLeapYear}`;
+export type ISODateString = `${NormalYear}-${MonthWithDayOnNormalYear}` | `${LeapYear}-${MonthWithDayOnLeapYear}`;
