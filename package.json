@@ -11,7 +11,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "branches": ["main"]
+    "branches": ["master"]
   },
   "scripts": {
     "semantic-release": "semantic-release"
