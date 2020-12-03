@@ -7,10 +7,10 @@ Really super types for typescript
 
 ```bash
 # NPM
-npm install utility-types
+npm install super-types
 
 # YARN
-yarn add utility-types
+yarn add super-types
 ```
 
 ---
