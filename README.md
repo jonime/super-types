@@ -2,6 +2,17 @@
 
 Really super types for typescript
 
+- [super-types](#super-types)
+  - [Installation](#installation)
+  - [Types](#types)
+    - [Array related](#array-related)
+      - [`ArrayElementType`](#arrayelementtype)
+    - [Date related](#date-related)
+      - [`ISODateString`](#isodatestring)
+  - [License](#license)
+
+---
+
 ## Installation
 
 ```bash
@@ -14,19 +25,11 @@ yarn add super-types
 
 ---
 
-# Table of Contents
+## Types
 
-## Array
+### Array related
 
-- [`ArrayElementType`](#arrayElementType)
-
-## Date
-
-- [`ISODateString`](#isoDateString)
-
----
-
-### `ArrayElementType`
+#### `ArrayElementType`
 
 This is used to get the type of the array element from the array. Example:
 
@@ -35,7 +38,11 @@ const array = [1, 2, 3];
 type TypeOfArrayElement = ArrayElementType<typeof array>;
 ```
 
-### `ISODateString`
+---
+
+### Date related
+
+#### `ISODateString`
 
 This is used to add type to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date. Example:
 
