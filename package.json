@@ -1,0 +1,11 @@
+{
+  "name": "super-types",
+  "version": "1.0.0",
+  "repository": "https://github.com/jonime/super-types",
+  "homepage": "https://github.com/jonime/super-types",
+  "license": "MIT",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "typescript": "^4.1.2"
+  }
+}
