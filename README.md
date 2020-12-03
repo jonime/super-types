@@ -4,7 +4,6 @@ Really super types for typescript
 
 ## Installation
 
-
 ```bash
 # NPM
 npm install super-types
@@ -17,11 +16,24 @@ yarn add super-types
 
 # Table of Contents
 
+## Array
+
+- [`ArrayElementType`](#arrayElementType)
+
 ## Date
 
-* [`ISODateString`](#isoDateString)
+- [`ISODateString`](#isoDateString)
 
 ---
+
+### `ArrayElementType`
+
+This is used to get the type of the array element from the array. Example:
+
+```ts
+const array = [1, 2, 3];
+type TypeOfArrayElement = ArrayElementType<typeof array>;
+```
 
 ### `ISODateString`
 

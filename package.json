@@ -5,13 +5,18 @@
   "homepage": "https://github.com/jonime/super-types",
   "license": "MIT",
   "types": "types/index.d.ts",
-  "devDependencies": {
+  "dependencies": {
     "semantic-release": "^17.3.0",
     "typescript": "^4.1.2"
   },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
   "publishConfig": {
     "access": "public",
-    "branches": ["master"]
+    "branches": [
+      "master"
+    ]
   },
   "scripts": {
     "test": "tsc",
