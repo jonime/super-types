@@ -5,8 +5,6 @@ Really super types for typescript
 - [super-types](#super-types)
   - [Installation](#installation)
   - [Types](#types)
-    - [Array related](#array-related)
-      - [`ArrayElementType`](#arrayelementtype)
     - [Date related](#date-related)
       - [`ISODateString`](#isodatestring)
   - [License](#license)
@@ -26,17 +24,6 @@ yarn add super-types
 ---
 
 ## Types
-
-### Array related
-
-#### `ArrayElementType`
-
-This is used to get the type of the array element from the array. Example:
-
-```ts
-const array = [1, 2, 3];
-type TypeOfArrayElement = ArrayElementType<typeof array>;
-```
 
 ---
 
