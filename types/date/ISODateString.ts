@@ -109,17 +109,17 @@ type DayOf28DayMonth = Exclude<DayOf29DayMonth, '29'>;
 type MonthWith31Days = '01' | '03' | '05' | '07' | '08' | '10' | '12';
 type MonthWith30Days = '04' | '06' | '09' | '11';
 
-type MonthAndDateWith31Days = `${MonthWith31Days}-${Day}`;
-type MonthAndDateWith30Days = `${MonthWith30Days}-${DayOf30DayMonth}`;
+type MonthAndDayOf31DayMonths = `${MonthWith31Days}-${Day}`;
+type MonthAndDayOf30DayMonths = `${MonthWith30Days}-${DayOf30DayMonth}`;
 
 type MonthAndDayOnNormalYear =
-  | MonthAndDateWith31Days
-  | MonthAndDateWith30Days
+  | MonthAndDayOf31DayMonths
+  | MonthAndDayOf30DayMonths
   | `02-${DayOf28DayMonth}`;
 
 type MonthAndDayOnLeapYear =
-  | MonthAndDateWith31Days
-  | MonthAndDateWith30Days
+  | MonthAndDayOf31DayMonths
+  | MonthAndDayOf30DayMonths
   | `02-${DayOf29DayMonth}`;
 
 export type ISODateString =
